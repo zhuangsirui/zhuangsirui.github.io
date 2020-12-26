@@ -1,0 +1,20 @@
+# Site settings
+title: Sirui's Blog
+baseurl: ""
+url: "http://sirui.me"
+
+# Build settings
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Third-party services
+
+# just leave blank to disable it
+google_analytics: UA-82409206-1
+disqus_shortname: sirui-me
+
+# Utils
+mathjax: true
+gems:
+  - jekyll-github-metadata

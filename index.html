@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="home">
+	<section>
+		<h2 class="smallcap">about</h2>
+        <p>一个很紧张的程序员。</p>
+		<p>感谢 <a href="https://github.com/syaning/slim">slim</a> 的作者，一个完美的 Jekyll 主题。</p>
+	</section>
+	<section>
+		<h2 class="smallcap">posts</h2>
+		<ul class="post-list">
+			{% for post in site.posts limit:5 %}
+			<li>
+				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
+	</section>
+</div>
