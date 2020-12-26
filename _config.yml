@@ -16,5 +16,5 @@ disqus_shortname: sirui-me
 
 # Utils
 mathjax: true
-gems:
+plugins:
   - jekyll-github-metadata
